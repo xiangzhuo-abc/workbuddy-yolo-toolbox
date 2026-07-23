@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+
+# 虚拟环境
+venv/
+.venv/
+.venv-build/
+.venv-build*/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# WorkBuddy
+.workbuddy/
+
+# 数据集和训练输出，不纳入版本控制
+dataset/images/
+dataset/labels/
+dataset/classes.txt
+dataset/data.yaml
+dataset/**/*.cache
+output/
+*.pt
+models/*.pt
+runs/
+logs/
+debug/
+
+# 发布与构建产物
+release/
+dist/
+build/
+tmp/
+
+# 用户配置
+config/tool_config.json
+
+# 开发临时文件
+*.tmp
+*.bak
+*~
+
+# 开发过程文档
+docs/superpowers/
