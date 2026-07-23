@@ -1,0 +1,7 @@
+# Windows x64 轻量基础程序锁定依赖（Python 3.12/3.13）
+PyQt5==5.15.11
+opencv-python==4.11.0.86
+numpy==2.5.1
+pillow==12.3.0
+pytesseract==0.3.13
+PyYAML==6.0.3

@@ -1,0 +1,21 @@
+# YOLO 数据标注工具箱运行依赖
+# 支持 Python 3.9-3.14；推荐 Python 3.11-3.13。
+# PyTorch 的 CUDA 版本请按显卡和 CUDA 版本单独选择官方安装命令。
+
+# GUI
+PyQt5>=5.15.11,<5.16
+
+# 图像处理 / OCR
+opencv-python>=4.11.0.86,<5
+numpy>=1.26.4,<2.5
+pillow>=10.4.0,<13
+pytesseract>=0.3.13,<0.4
+
+# YOLO 训练与推理
+ultralytics>=8.3,<8.5
+torch>=2.5,<3
+torchvision>=0.20,<1
+
+# 配置与训练可视化
+PyYAML>=6.0.2,<7
+tensorboard>=2.19,<3

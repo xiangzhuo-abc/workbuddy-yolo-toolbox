@@ -1,0 +1,11 @@
+# Windows x64 按需机器学习运行时锁定依赖（CPU）
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+opencv-python==4.11.0.86
+numpy==2.5.1
+pillow==12.3.0
+ultralytics==8.4.90
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+PyYAML==6.0.3
+tensorboard==2.21.0

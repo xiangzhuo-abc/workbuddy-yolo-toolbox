@@ -1,0 +1,10 @@
+# Windows x64 独立构建工具环境（Python 3.12/3.13）
+# 基础与 Worker 依赖分别见 requirements-base-windows.txt、
+# requirements-runtime-windows-cpu.txt 和 requirements-release-windows-cu118.txt。
+PyInstaller==6.20.0
+pyinstaller-hooks-contrib==2026.5
+altgraph==0.17.5
+packaging==26.2
+pefile==2024.8.26
+pywin32-ctypes==0.2.3
+setuptools==83.0.0

@@ -1,0 +1,27 @@
+{
+  "catalog_version": 1,
+  "artifacts": [
+    {
+      "runtime_id": "ml-cpu-win-x64-r1",
+      "profile": "cpu",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "worker_protocol": 1,
+      "torch_version": "2.7.1+cpu",
+      "torchvision_version": "0.22.1+cpu",
+      "ultralytics_version": "8.4.90",
+      "cuda_version": null
+    },
+    {
+      "runtime_id": "ml-cu118-win-x64-r1",
+      "profile": "cuda118",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "worker_protocol": 1,
+      "torch_version": "2.7.1+cu118",
+      "torchvision_version": "0.22.1+cu118",
+      "ultralytics_version": "8.4.90",
+      "cuda_version": "11.8"
+    }
+  ]
+}
