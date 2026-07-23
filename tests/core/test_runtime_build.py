@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import zipfile
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest import TestCase
@@ -158,3 +159,12 @@ class RuntimeBuildTests(TestCase):
             self.assertEqual(loaded.artifacts[0].archive_size, archive.stat().st_size)
             self.assertEqual(loaded.artifacts[0].sha256, complete.sha256)
             self.assertEqual(check_runtime_archive(archive, complete), [])
+            with zipfile.ZipFile(archive) as package:
+                self.assertTrue(package.infolist())
+                self.assertTrue(
+                    all(
+                        item.compress_type == zipfile.ZIP_LZMA
+                        for item in package.infolist()
+                        if not item.is_dir()
+                    )
+                )

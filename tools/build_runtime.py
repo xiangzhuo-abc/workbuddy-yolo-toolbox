@@ -71,6 +71,8 @@ CUDA_DLL_PREFIXES = (
     "nvrtc",
     "nvtoolsext",
 )
+RUNTIME_ARCHIVE_COMPRESSION = zipfile.ZIP_LZMA
+RUNTIME_ARCHIVE_COMPRESSION_LEVEL = 6
 
 
 def _iter_files(root: Path) -> Iterable[Path]:
@@ -271,8 +273,8 @@ def package_runtime_directory(
         with zipfile.ZipFile(
             temp_path,
             mode="w",
-            compression=zipfile.ZIP_DEFLATED,
-            compresslevel=6,
+            compression=RUNTIME_ARCHIVE_COMPRESSION,
+            compresslevel=RUNTIME_ARCHIVE_COMPRESSION_LEVEL,
             allowZip64=True,
         ) as archive:
             for file_path in sorted(_iter_files(root), key=lambda item: item.relative_to(root).as_posix()):
